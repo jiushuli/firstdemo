@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模态03</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target=".bs-example-modal-lg">
+    启动大modal
+</button>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                这是一个大的modal
+            </div>
+        </div>
+    </div>
+
+
+<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal"
+data-whatever="@mdo">Open
+    modal for @mdo
+</button><!--bs-example-modal-sm"  调整模态框的大小-->
+<div class="modal fade bs-example-modal-sm" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            这是一个小的modal
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

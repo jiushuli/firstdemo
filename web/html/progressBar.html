@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        body{
+            margin: 10px 0;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="progress">
+        <div class="progress-bar" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only">80%</span>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40%</span>
+        </div>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+            <span class="sr-only">20%</span>
+        </div><!--progress-bar-striped  条纹   progress-bar-danger颜色-->
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"  aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40%</span><!--active   动态-->
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

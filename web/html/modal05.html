@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模态框05</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" data-whatever="@ime">
+    点击出现
+</button>
+<div>
+    <div class="modal fade" id="myModal" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <form >
+                        <div class="form-group">
+                            <label class="control-label">UserName</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">PassWord</label>
+                            <input type="password" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+
+   /* $("#myModal").modal("show");//自动加载弹出*/
+
+    $("#myModal").on("show.bs.modal",function (e) {
+        var button=$(e.relatedTarget);
+        var recipient=button.data("whatever");
+        alert(recipient);
+        var modal=$(this);
+        modal.find(".modal-title").text("hello"+recipient);
+        modal.find(".modal-body input").val(recipient)
+
+    });
+
+    $("#myModal").modal({/*这个为false时点击表示点击空白处弹框不会消失  默认为true，*/
+        backdrop:false
+    });
+   /* $("#myModal").modal("hide");*///隐藏功能，不会自动加载时弹出
+
+    $("#myModal").on("hidden.bs.modal",function (e) {
+        alert("关闭了")
+    })
+</script>
+
+</body>
+</html>

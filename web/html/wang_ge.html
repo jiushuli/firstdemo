@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+        .row{
+            margin-bottom: 20px;
+        }
+        .row.row{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        [class*="col-"]{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: red;
+            background-color: #9d9d9d;
+            border: 1px solid #ddd;
+            border: 1px solid rgba(86,61,124,.2);
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div><!--最多只能是12个col-md-1(md后面的1表示占几个格子)总共为12个-->
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">col-md-1</div>
+        <div class="col-md-3">col-md-1</div>
+        <div class="col-md-3">col-md-1</div>
+        <div class="col-md-2">col-md-1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-lg-offset-4">col-md-1</div><!--col-lg-offset-4向右偏移四个-->
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-9">
+            one
+            <div class="row">
+                <div class="col-xs-8">
+                    first             <!--  嵌套-->
+                    <div class="col-xs-4">
+                        two
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-9">col-sm-9</div>
+        <div class="col-sm-3">col-sm-3</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9 col-md-push-3">col-sm-9</div>
+        <div class="col-sm-3 col-md-pull-9">col-sm-3</div><!--换位-->
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单04</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="dropdown">
+        <button class="btn btn-default" id="dlabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            下拉菜单
+            <span class="caret"></span>
+        </button>
+   <!--     <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>-->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dlabel">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">hello1</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">hello2</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">hello3</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">hello4</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  //  $(document).off(".data-api");/* $(document).off(".dropdown.data-api")表示禁用class=dropdown的属性，*/
+    /* $(document).off(".data-api")表示禁用全部的bootStrap的功能*/
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工具提示</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <p class="muted" style="margin-bottom: 0">
+        欢迎来到<a href="#" data-toggle="tooltip" title="这是一个搜索引擎" data-placement="bottom" data-original-title="www.baidu.com">千百度</a>
+    </p><!--title="这是一个搜索引擎"这个为提示内容，如果没写这个则提示data-original-title="www.baidu.com"的网址
+    data-placement="bottom"除了可以为bottom还可以为左右上等data-placement="left" -->
+</div>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+   /* $("#mytooltip").tooltip("show");*///这个表示不已加载出来就提示信息
+
+</script>
+
+</body>
+</html>

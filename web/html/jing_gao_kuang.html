@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>警告框</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="alert alert-info fade in" id="myalert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>极客学院</strong>欢迎你的到来！
+    </div>
+    <div class="alert alert-info fade in" id="myalert1">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>极客学院</strong>欢迎你的到来！
+        <button type="button" class="btn btn-primary">详情</button>
+    </div>
+
+</div>
+<script>
+
+   /* $("#myalert").alert("close");*///弹出则关闭myalert对象
+    $("#myalert1").on("close.bs.alert",function (e) {//弹出则就像控制台打印一句话
+        console.log("出发了");
+    })
+</script>
+
+</body>
+</html>

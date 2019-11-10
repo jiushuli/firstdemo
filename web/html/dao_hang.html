@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul id="mytable" class="nav nav-tabs" role="tablist"><!--nav-tabs 和 nav-pills是另一种格式 -->
+        <li role="presentation" class="active"><a href=" " >HOME</a></li>
+        <li role="presentation" ><a href=" " >hello</a></li>
+        <li role="presentation" ><a href=" " >word</a></li>
+    </ul>
+</div>
+
+<div class="container"><!--nav-stacked表示竖着 nav-pills是另一种格式 -->
+    <ul id="mytable01" class="nav nav-pills nav-stacked nav-justified" role="tablist">
+        <!--nav-justified  填满屏幕-->
+        <li role="presentation" class="active"><a href=" " >HOME</a></li>
+        <li role="presentation" ><a href=" " >hello</a></li>
+        <li role="presentation" class="disabled"><a href=" " >word</a></li>
+        <!--class="disabled"禁选-->
+    </ul>
+</div>
+
+<div class="container">
+    <ul id="mytable02" class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href=" " >HOME</a></li>
+        <li role="presentation" ><a href=" " >hello</a></li>
+        <li role="presentation" class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" >word
+            <span class="caret"></span>
+        </a>
+            <ul class="dropdown-menu" role="menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello1</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello2</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello3</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1">hello4</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+<script>
+    $("#mytable a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+
+    });
+
+    $("#mytable01 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+
+    });
+    $("#mytable02 a").click(function (e) {
+        e.preventDefault();
+        $(this).tab("show");
+
+    });
+</script>
+
+</body>
+</html>

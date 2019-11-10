@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <a class="btn btn-default" data-toggle="collapse" href="#collapseExample">点击查看</a>
+    <div class="collapse" id="collapseExample">
+        Hello
+    </div>
+</div>
+<br>
+<div class="panel-group" id="accordion" role="tablist">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">item01</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse in" role="tabpanel" id="collapseOne">
+            <div class="list-group-item-success">
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">item02</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse in" role="tabpanel" id="collapseTwo">
+            <div class="list-group-item-danger">
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">item03</a>
+            </h4>
+        </div>
+        <div class="panel-collapse collapse in" role="tabpanel" id="collapseThree">
+            <div class="list-group-item-warning">
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+                Hello,热爱生活 Hello,热爱生活 Hello,热爱生活 Hello,热爱生活<br>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+
+   /* $("#accordion").collapse({
+        toggle: false
+    })*/
+   $("#accordion").on("hidden.bs.collapse",function () {
+       alert("结束");
+   })
+
+</script>
+
+</body>
+</html>

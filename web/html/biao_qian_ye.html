@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+        <li><a href="#profile" data-toggle="tab">Profile</a></li>
+        <li class="dropdown">
+            <a href="#" id="myTabdrop1" class="dropdown-toggle" data-toggle="dropdown">下拉菜单<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#dropone" tabindex="-1" data-toggle="tab">one</a></li>
+                <li><a href="#droptwo" tabindex="-1" data-toggle="tab">two</a></li>
+            </ul>
+        </li>h
+    </ul>
+    <div class="tab-content" id="MyTabContent">
+        <div class="tab-pane" id="home">
+            <p>home  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>home  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+        </div>
+        <div class="tab-pane" id="profile">
+            <p>profile  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>profile  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>profile  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+        </div>
+        <div class="tab-pane" id="dropone">
+            <p>dropone  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>dropone  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+        </div>
+        <div class="tab-pane" id="droptwo">
+            <p>droptwo  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>droptwo  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+            <p>你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇你好  我是传奇</p>
+        </div>
+        </div>
+</div>
+<script>
+   /* $("#myTab a:last").tab("show");*///表示默认加载第一次显示id为myTab下的最后一个a标签的内容
+    $("#myTab li:eq(1) a").tab("show");//表示默认加载第一次显示id为myTab下第1个li标签的内容
+</script>
+
+</body>
+</html>
